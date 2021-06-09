@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font awsome -->
+    <title>cryptogrphy</title>
+</head>
+
+<body>
+    <header>
+        <p class="logo">cryptogrphy</p>
+        <!-- list of anchor -->
+        <ul>
+            <li><a href="#home">home</a> </li>
+            <li><a href="#classification">classification</a></li>
+            <li><a href="#Cryptanalysis">Cryptanalysis</a></li>
+            <li><a href="#Lightweight cryptography">Lightweight cryptography</a></li>
+            <li><a href="#Prohibitions">Prohibitions</a></li>
+        </ul>
+    </header>
+    <main>
+        <div id="home">
+            <p>Before the modern era, cryptography focused on message confidentiality (i.e., encryption)—conversion of
+                messages from a comprehensible form into an incomprehensible one and back again at the other end,
+                rendering it unreadable by interceptors or eavesdroppers without secret knowledge (namely the key needed
+                for decryption of that message). Encryption attempted to ensure secrecy in communications, such as those
+                of spies, military leaders, and diplomats. In recent decades, the field has expanded beyond
+                confidentiality concerns to include techniques for message integrity checking, sender/receiver identity
+                authentication, digital signatures, interactive proofs and secure computation, among others.
+            </p>
+        </div>
+        <!-- table for cryptogrphy   -->
+        <div id="classification">
+            <table>
+                <caption>classification of cryptography</caption>
+                <tr>
+                    <th scope="col">cryptography </th>
+
+                </tr>
+                <tr>
+                    <td>symmetric key </td>
+                </tr>
+                <tr>
+                    <td>Asymmetric key</td>
+                </tr>
+                <tr>
+                    <td>Hash function</td>
+                </tr>
+            </table>
+        </div>
+        <div id="Cryptanalysis">
+            <p>
+                The goal of cryptanalysis is to find some weakness or insecurity in a cryptographic scheme, thus
+                permitting its subversion or evasion.
+
+                It is a common misconception that every encryption method can be broken. In connection with his WWII
+                work at Bell Labs, Claude Shannon proved that the one-time pad cipher is unbreakable, provided the key
+                material is truly random, never reused, kept secret from all possible attackers, and of equal or greater
+                length than the message.[50] Most ciphers, apart from the one-time pad, can be broken with enough
+                computational effort by brute force attack, but the amount of effort needed may be exponentially
+                dependent on the key size, as compared to the effort needed to make use of the cipher. In such cases,
+                effective security could be achieved if it is proven that the effort required (i.e., "work factor", in
+                Shannon's terms) is beyond the ability of any adversary. This means it must be shown that no efficient
+                method (as opposed to the time-consuming brute force method) can be found to break the cipher. Since no
+                such proof has been found to date, the one-time-pad remains the only theoretically unbreakable cipher.
+                Although well-implemented one-time-pad encryption cannot be broken, traffic analysis is still possible.
+
+                There are a wide variety of cryptanalytic attacks, and they can be classified in any of several ways. A
+                common distinction turns on what Eve (an attacker) knows and what capabilities are available. In a
+                ciphertext-only attack, Eve has access only to the ciphertext (good modern cryptosystems are usually
+                effectively immune to ciphertext-only attacks). In a known-plaintext attack, Eve has access to a
+                ciphertext and its corresponding plaintext (or to many such pairs). In a chosen-plaintext attack, Eve
+                may choose a plaintext and learn its corresponding ciphertext (perhaps many times); an example is
+                gardening, used by the British during WWII. In a chosen-ciphertext attack, Eve may be able to choose
+                ciphertexts and learn their corresponding plaintexts.[4] Finally in a man-in-the-middle attack Eve gets
+                in between Alice (the sender) and Bob (the recipient), accesses and modifies the traffic and then
+                forwards it to the recipient.[51] Also important, often overwhelmingly so, are mistakes (generally in
+                the design or use of one of the protocols involved).
+            </p>
+        </div>
+        <div id="Lightweight cryptography">
+            Lightweight cryptography (LWC) concerns cryptographic algorithms developed for a strictly constrained
+            environment. The growth of Internet of Things (IoT) has spiked research into the development of lightweight
+            algorithms that are better suited for the environment. An IoT environment requires strict constraints on
+            power consumption, processing power, and security.[59] Algorithms such as PRESENT, AES, and SPECK are
+            examples of the many LWC algorithms that have been developed to achieve the standard set by the National
+            Institute of Standards and Technology.
+            <!-- img of NSA involvement -->
+            <img
+                src="data:image/png;base64,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">
+        </div>
+        <div id="Prohibitions">
+            Cryptography has long been of interest to intelligence gathering and law enforcement agencies.[8] Secret
+            communications may be criminal or even treasonous[citation needed]. Because of its facilitation of privacy,
+            and the diminution of privacy attendant on its prohibition, cryptography is also of considerable interest to
+            civil rights supporters. Accordingly, there has been a history of controversial legal issues surrounding
+            cryptography, especially since the advent of inexpensive computers has made widespread access to
+            high-quality cryptography possible.
+            In some countries, even the domestic use of cryptography is, or has been, restricted. Until 1999, France
+            significantly restricted the use of cryptography domestically, though it has since relaxed many of these
+            rules. In China and Iran, a license is still required to use cryptography.[6] Many countries have tight
+            restrictions on the use of cryptography. Among the more restrictive are laws in Belarus, Kazakhstan,
+            Mongolia, Pakistan, Singapore, Tunisia, and Vietnam.
+            In the United States, cryptography is legal for domestic use, but there has been much conflict over legal
+            issues related to cryptography.[8] One particularly important issue has been the export of cryptography and
+            cryptographic software and hardware. Probably because of the importance of cryptanalysis in World War II and
+            an expectation that cryptography would continue to be important for national security, many Western
+            governments have, at some point, strictly regulated export of cryptography. After World War II, it was
+            illegal in the US to sell or distribute encryption technology overseas; in fact, encryption was designated
+            as auxiliary military equipment and put on the United States Munitions List.[62] Until the development of
+            the personal computer, asymmetric key algorithms (i.e., public key techniques), and the Internet, this was
+            not especially problematic. However, as the Internet grew and computers became more widely available,
+            high-quality encryption techniques became well known around the globe.
+        </div>
+
+    </main>
+</body>
+
+</html>
